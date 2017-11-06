@@ -17,7 +17,12 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-require_once( 'vendor/autoload.php' );
+// Prefer the vendor directory in the wordpress root
+if ( file_exists( ABSPATH . '/vendor/autoload.php' ) ) {
+  require_once( ABSPATH . '/vendor/autoload.php' );
+} else {
+  require_once( 'vendor/autoload.php' );
+}
 
 if ( ! defined( 'LC_SIMPLE_CLOUDINARY_VERSION' ) ) {
 	define( 'LC_SIMPLE_CLOUDINARY_VERSION', '0.1.0' );
