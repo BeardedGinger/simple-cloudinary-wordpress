@@ -1,7 +1,7 @@
 {
     "name": "limecuda/simple-cloudinary-wordpress",
     "description": "A simple integration of Cloudinary with WordPress to pass all images uploaded to WordPress to Cloudinary",
-    "type": "project",
+    "type": "wordpress-plugin",
     "require": {
         "cloudinary/cloudinary_php": "^1.8",
         "vlucas/phpdotenv": "^2.4"
