@@ -79,7 +79,7 @@ class Upload_Images {
 						'bytes_step'		 => 20000,
 						'min_width'			 => 200,
 						'max_width'			 => 1000,
-						'max_images'		 => 20,
+						'max_images'		 => 10,
 					],
 				],
 				'use_filename' => true,
