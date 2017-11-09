@@ -71,18 +71,18 @@ class Upload_Images {
 
 		if ( is_callable( array( '\Cloudinary\Uploader', 'upload' ) ) ) {
 			$api_args = [
-				'use_filename' => true,
 				'background'   => '#383838',
 				'opacity'      => 25,
 				'responsive_breakpoints' => [
 					[
 						'create_derived' => false,
 						'bytes_step'		 => 20000,
-						'min_width'			=> 200,
-						'max_width'			=> 1000,
+						'min_width'			 => 200,
+						'max_width'			 => 1000,
 						'max_images'		 => 20,
 					],
 				],
+				'use_filename' => true,
 			];
 
 			$response = \Cloudinary\Uploader::upload( $file, $api_args );
