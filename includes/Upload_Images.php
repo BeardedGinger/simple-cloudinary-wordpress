@@ -75,11 +75,11 @@ class Upload_Images {
 				'opacity'      => 25,
 				'responsive_breakpoints' => [
 					[
-						'create_derived' => false,
+						'create_derived' => true,
 						'bytes_step'		 => 20000,
 						'min_width'			 => 200,
 						'max_width'			 => 1000,
-						'max_images'		 => 10,
+						'max_images'		 => 5,
 					],
 				],
 				'use_filename' => true,
